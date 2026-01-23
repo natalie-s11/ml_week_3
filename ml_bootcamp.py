@@ -1,13 +1,17 @@
-# %% [markdown]
+    # %% [markdown]
 # # Machine Learning Bootcamp
 
 # %%
 # Imports
 import pandas as pd
-import numpy as np 
+import numpy as np
+import matplotlib.pyplot as plt 
 #make sure to install sklearn in your terminal first!
 from sklearn.model_selection import train_test_split 
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
+from io import StringIO
+import requests
+
 
 # %% [markdown]
 # ## Phase I
@@ -193,13 +197,12 @@ print(3/(8+3)) #same as above, good job!
 job = pd.read_csv("https://raw.githubusercontent.com/DG1606/CMS-R-2020/master/Placement_Data_Full_Class.csv")
 print(job.head())
 
+# %%
 job.info()
 
 # Let's check the structure of the dataset and see if we have any issues with variable classes
 
 # %%
-from io import StringIO
-import requests
 
 url="https://query.data.world/s/ttvvwduzk3hwuahxgxe54jgfyjaiul"
 s=requests.get(url).text
