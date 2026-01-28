@@ -34,12 +34,19 @@ import requests  # For HTTP requests to download data
 #
 # Key Questions to Consider:
 # - What is the target variable?
+# The target variable is cereal rating. 
+
 # - Assuming we are able to optimize and make recommendations,
 #   how does this translate into a business context?
+# This translates into a business context by seeing what brand of cereal is the best to buy.
+
 # - Prediction problem: Classification or Regression?
+# Classification problem because we are trying to classify the cereal ratings into high quality and low quality.
+
 # - Independent Business Metric: Assuming that higher ratings result in
 #   higher sales, can we predict which new cereals that enter the market
 #   over the next year will perform the best?
+# Yes, new cereals with the highest ratings will perform the best. 
 
 # %% [markdown]
 # ## Phase II
